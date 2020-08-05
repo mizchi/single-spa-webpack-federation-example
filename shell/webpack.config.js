@@ -10,6 +10,7 @@ module.exports = {
       name: "shell",
       remotes: {
         header: "header@/header/remote.js",
+        content: "content@/content/remote.js",
       },
       shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),

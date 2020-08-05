@@ -4,13 +4,13 @@ const ModuleFederationPlugin = require("webpack").container
 
 module.exports = {
   output: {
-    path: path.join(__dirname, "../shell/public/header"),
-    publicPath: "/header/",
+    path: path.join(__dirname, "../shell/public/content"),
+    publicPath: "/content/",
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "header",
-      library: { type: "var", name: "header" },
+      name: "content",
+      library: { type: "var", name: "content" },
       filename: "remote.js",
       exposes: {
         "./parcel": "./src/parcel",

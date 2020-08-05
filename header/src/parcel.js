@@ -1,4 +1,4 @@
-import { h } from "preact";
+import { h, render } from "preact";
 
 export default async () => {
   return {

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "run-p start:*",
     "start:shell": "yarn workspace shell start",
-    "start:header": "yarn workspace header start"
+    "start:header": "yarn workspace header start",
+    "start:content": "yarn workspace content start"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
@@ -19,6 +20,7 @@
   },
   "workspaces": [
     "shell",
-    "header"
+    "header",
+    "content"
   ]
 }
