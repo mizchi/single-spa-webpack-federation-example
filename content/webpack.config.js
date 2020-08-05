@@ -13,9 +13,11 @@ module.exports = {
       library: { type: "var", name: "content" },
       filename: "remote.js",
       exposes: {
-        "./parcel": "./src/parcel",
+        "./parcel": "./src/index",
       },
-      shared: {},
+      shared: {
+        "simple-spa": { singleton: true },
+      },
       // shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),
   ],

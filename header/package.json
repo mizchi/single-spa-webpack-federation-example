@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "webpack -w --mode development"
+    "start": "webpack -w --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "preact": "^10.4.6"

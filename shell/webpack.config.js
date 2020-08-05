@@ -12,7 +12,11 @@ module.exports = {
         header: "header@/header/remote.js",
         content: "content@/content/remote.js",
       },
-      shared: { react: { singleton: true }, "react-dom": { singleton: true } },
+      shared: {
+        "simple-spa": { singleton: true },
+        react: { singleton: true },
+        "react-dom": { singleton: true },
+      },
     }),
   ],
 };

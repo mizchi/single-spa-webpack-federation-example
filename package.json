@@ -3,10 +3,8 @@
   "author": "mizchi <miz404@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "run-p start:*",
-    "start:shell": "yarn workspace shell start",
-    "start:header": "yarn workspace header start",
-    "start:content": "yarn workspace content start"
+    "start": "yarn workspaces run start",
+    "build": "yarn workspaces run build"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
